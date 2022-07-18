@@ -1,0 +1,28 @@
+/*grid container secciones*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% auto 5%;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.grid-container > * {
+  background-color: aliceblue;
+  text-align: center;
+  color: black;
+}
+
+header, footer {
+  grid-column: 1/span 3;
+}
+
+@media all and (max-width: 600px) {
+  main, aside, footer {
+    grid-column: 1/span 3;
+  }
+  .grid-container {
+    grid-template-rows: repeat(5, 300px);
+  }
+}/*# sourceMappingURL=gridsqueries.css.map */

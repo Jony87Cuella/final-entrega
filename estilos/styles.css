@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: bisque;
+}
+
+.imgprinc {
+  max-width: auto;
+}
+
+.promos {
+  text-align: center;
+  flex: content;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5%;
+  background-color: rgb(4, 4, 12);
+  color: aliceblue;
+}
+
+.titulo {
+  margin-top: 5%;
+  margin-bottom: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: calc(5.375rem + 1.5vw);
+}
+
+.texto {
+  font-family: "Oswald", sans-serif;
+  font-size: 3vh;
+}
+
+.foot {
+  background-image: url("../img/footer/Captura de pantalla 2022-07-14 013310.png");
+  background-position: 0vw;
+  background-repeat: no-repeat;
+  padding: 20vh;
+  margin-bottom: ovh;
+  margin-bottom: auto;
+}
+
+.iralInicio {
+  color: red;
+  font-size: 5rem;
+}
+
+/*animaciones*/
+.aumento:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 4s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  transition: 1s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+iframe {
+  width: 150vh;
+  height: 150vh;
+  border: 5px solid green;
+}
+
+/*grid container secciones*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% auto 5%;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.grid-container > * {
+  text-align: center;
+  color: black;
+}
+
+header, main, footer {
+  grid-column: 1/span 3;
+}
+
+@media all and (max-width: 600px) {
+  main, aside, footer {
+    grid-column: 1/span 3;
+  }
+  .grid-container {
+    grid-template-rows: repeat(6, 300px);
+    background-color: none;
+  }
+}
+@media (max-width: 320px) {
+  main, aside, footer {
+    grid-column: 1/span 3;
+  }
+  .grid-container {
+    grid-template-rows: repeat(6, 300px);
+    background-color: none;
+  }
+}
+.logo {
+  max-width: 10vh;
+}
+
+/*fondosideleft*/
+.left {
+  background-image: url("../img/hombre/fondo -left.jpg");
+  background-repeat: repeat-y;
+}
+
+#leftContacto {
+  background-color: none;
+  background-image: url("../img/fondocontacto.jpg");
+}/*# sourceMappingURL=styles.css.map */
